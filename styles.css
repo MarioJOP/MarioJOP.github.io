@@ -1,1 +1,211 @@
-:root{--text:#333;--muted:#666;--line:#e5e5e5;--link:#276999}*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:15px;line-height:1.7}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:1rem;top:1rem;background:#fff;padding:.5rem}.page{width:min(940px,calc(100% - 40px));margin:70px auto;display:grid;grid-template-columns:210px 1fr;gap:70px;align-items:start}.profile{position:sticky;top:50px}.profile>img{content:url("data/JER_8823_corte.jpg");display:block;width:145px;height:145px;border-radius:50%;object-fit:cover;margin-bottom:22px}.profile h1{margin:0 0 10px;font-family:Georgia,"Times New Roman",serif;font-size:24px;line-height:1.25}.profile p{color:var(--muted);line-height:1.55;margin:0 0 16px}.social-links{display:flex;align-items:center;gap:11px}.social-links a{display:inline-flex;width:22px;height:22px;color:#555}.social-links a:hover{color:var(--link);text-decoration:none}.social-links svg{width:100%;height:100%;fill:currentColor}.language{display:inline-flex;align-items:center;gap:7px;margin-top:18px;padding:7px 10px;border:1px solid #ccc;border-radius:4px;background:#fff;color:#444;font-size:0;line-height:1.2;cursor:pointer}.language::after{content:"Switch to English  →";font-size:12px;font-weight:500}.language:hover{border-color:var(--link);color:var(--link);background:#f8fafb;text-decoration:none}.language:focus-visible{outline:2px solid var(--link);outline-offset:2px}html[lang="en"] .language::after{content:"Mudar para português  →"}main{min-width:0}section{margin-bottom:48px}h2{margin:0 0 16px;padding-bottom:7px;border-bottom:1px solid var(--line);font-family:Georgia,"Times New Roman",serif;font-size:22px;color:#222}p{margin:0 0 13px}.item{margin-bottom:22px}.item strong{color:#222}.item em{color:var(--muted)}.note{color:#8a5c10;font-size:14px}.links{margin-top:4px;font-size:13px;color:var(--muted)}.item strong a{color:inherit}.entries strong a{color:inherit}ul{margin:0;padding-left:20px}li{margin-bottom:13px}.entries{list-style:none;padding:0}.entries li{margin-bottom:16px}.entries span{float:right;color:var(--muted);font-size:14px}.entries.compact li{margin-bottom:8px}footer{margin-top:60px;padding-top:18px;border-top:1px solid var(--line);color:#888;font-size:13px}@media(max-width:700px){.page{margin:35px auto;grid-template-columns:1fr;gap:45px}.profile{position:static}.profile>img{width:120px;height:120px}}@media(max-width:430px){.page{width:min(100% - 28px,940px)}.entries span{float:none;display:block}}
+:root {
+  --text: #333;
+  --muted: #666;
+  --line: #e5e5e5;
+  --link: #276999;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: #fff;
+  padding: 0.5rem;
+}
+.page {
+  width: min(940px, calc(100% - 40px));
+  margin: 70px auto;
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 70px;
+  align-items: start;
+}
+.profile {
+  position: sticky;
+  top: 50px;
+}
+.profile > img {
+  content: url("data/JER_8823_corte.jpg");
+  display: block;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 22px;
+}
+.profile h1 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 1.25;
+}
+.profile p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0 0 16px;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.social-links a {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  color: #555;
+}
+.social-links a:hover {
+  color: var(--link);
+  text-decoration: none;
+}
+.social-links svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+.language {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 18px;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #444;
+  font-size: 0;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.language::after {
+  content: "Switch to English  →";
+  font-size: 12px;
+  font-weight: 500;
+}
+.language:hover {
+  border-color: var(--link);
+  color: var(--link);
+  background: #f8fafb;
+  text-decoration: none;
+}
+.language:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+html[lang="en"] .language::after {
+  content: "Mudar para português  →";
+}
+main {
+  min-width: 0;
+}
+section {
+  margin-bottom: 48px;
+}
+h2 {
+  margin: 0 0 16px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  color: #222;
+}
+p {
+  margin: 0 0 13px;
+}
+.item {
+  margin-bottom: 22px;
+}
+.item strong {
+  color: #222;
+}
+.item em {
+  color: var(--muted);
+}
+.note {
+  color: #8a5c10;
+  font-size: 14px;
+}
+.links {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.item strong a {
+  color: inherit;
+}
+.entries strong a {
+  color: inherit;
+}
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 13px;
+}
+.entries {
+  list-style: none;
+  padding: 0;
+}
+.entries li {
+  margin-bottom: 16px;
+}
+.entries span {
+  float: right;
+  color: var(--muted);
+  font-size: 14px;
+}
+.entries.compact li {
+  margin-bottom: 8px;
+}
+footer {
+  margin-top: 60px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: #888;
+  font-size: 13px;
+}
+@media (max-width: 700px) {
+  .page {
+    margin: 35px auto;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .profile {
+    position: static;
+  }
+  .profile > img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 430px) {
+  .page {
+    width: min(100% - 28px, 940px);
+  }
+  .entries span {
+    float: none;
+    display: block;
+  }
+}
